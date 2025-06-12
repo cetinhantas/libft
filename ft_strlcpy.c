@@ -29,11 +29,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (slen);
 }
-#include <stdio.h>
-int main()
-{
-	char *arr = "1234567890";
-	char dest[15];
-	ft_strlcpy(dest, arr, 11);
-	printf("%s", dest);
-}
