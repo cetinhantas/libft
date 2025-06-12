@@ -14,5 +14,21 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	
+	char	*ptr;
+	size_t	nlen;
+	size_t	slen;
+
+	slen = ft_strlen(s);
+	if (!len || !*s || start >= slen)
+		return (ft_calloc(1,1));
+	if (len > slen)
+		len = slen;
+	nlen = ft_strlen(&s[start]) + 1;
+	if (nlen > len + 1)
+		nlen = len + 1;
+	ptr = (char *)malloc(nlen);
+	if (!ptr)
+		return (NULL);
+	ft_strlcpy(ptr, &s[start], nlen);
+	return (ptr);
 }
