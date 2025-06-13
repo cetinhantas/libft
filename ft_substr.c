@@ -6,7 +6,7 @@
 /*   By: chantas <chantas@student.42istanbul.com.t  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/09 23:45:07 by chantas           #+#    #+#             */
-/*   Updated: 2025/06/10 15:39:31 by chantas          ###   ########.fr       */
+/*   Updated: 2025/06/13 04:53:47 by chantas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	slen = ft_strlen(s);
 	if (!len || !*s || start >= slen)
-		return (ft_calloc(1,1));
+		return (ft_calloc(1, 1));
 	if (len > slen)
 		len = slen;
 	nlen = ft_strlen(&s[start]) + 1;
