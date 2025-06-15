@@ -25,7 +25,8 @@ CFILES =ft_isalpha.c \
 		ft_strjoin.c \
 		ft_strtrim.c \
 		ft_striteri.c\
-		ft_split.c
+		ft_split.c   \
+		ft_itoa.c
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 OFILES = $(CFILES:.c=.o)
