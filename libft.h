@@ -6,7 +6,7 @@
 /*   By: chantas <chantas@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/05 18:46:15 by chantas           #+#    #+#             */
-/*   Updated: 2025/06/15 19:46:42 by chantas          ###   ########.fr       */
+/*   Updated: 2025/06/15 20:30:19 by chantas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,5 @@ char	*ft_strtrim(char const *s1, char const *set);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 #endif

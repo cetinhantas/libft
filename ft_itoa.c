@@ -6,7 +6,7 @@
 /*   By: chantas <chantas@student.42istanbul.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/15 18:31:32 by chantas           #+#    #+#             */
-/*   Updated: 2025/06/15 20:25:26 by chantas          ###   ########.fr       */
+/*   Updated: 2025/06/15 20:28:27 by chantas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,11 +70,4 @@ char	*ft_itoa(int n)
 		return (NULL);
 	ft_fill(ptr, n, len);
 	return (ptr);
-}
-
-#include <stdio.h>
-int main()
-{
-	char *s = ft_itoa(-2147483648);
-	printf("%s", s);
 }
