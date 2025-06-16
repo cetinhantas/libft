@@ -27,10 +27,18 @@ CFILES =ft_isalpha.c \
 		ft_striteri.c\
 		ft_split.c   \
 		ft_itoa.c    \
-		ft_strmapi.c
+		ft_strmapi.c \
+		ft_putchar_fd.c\
+		ft_putstr_fd.c \
+		ft_putendl_fd.c\
+		ft_putnbr_fd.c
+
+BFILES = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c
+
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 OFILES = $(CFILES:.c=.o)
+BOFILES = $(BFILES:.c=.o)
 
 NAME = libft.a
 
@@ -38,8 +46,11 @@ all: $(NAME)
 
 $(NAME): $(OFILES)
 	ar rcs $(NAME) $(OFILES)
+
+bonus: $(OFILES) $(BOFILES)
+	ar rcs $(NAME) $(BOFILES)
 clean:
-	rm -f $(OFILES)
+	rm -f $(OFILES) $(BOFILES)
 fclean:	clean
 	rm -f $(NAME)
 re: fclean all
